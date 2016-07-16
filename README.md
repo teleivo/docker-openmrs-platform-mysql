@@ -15,6 +15,7 @@ Make sure you have [Docker](https://docs.docker.com/) installed.
 
 ## Setup
 
+### Build
 Start by cloning this repository:
 
 ```
@@ -28,6 +29,17 @@ cd docker-openmrs-platform-mysql
 docker build --tag openmrs-platform-mysql .
 ```
 
+### Pull
+The Docker image is hosted on [Docker Hub](https://hub.docker.com/r/teleivo/openmrs-platform-mysql/)
+
+You can pull via
+```
+docker pull teleivo/openmrs-platform-mysql
+```
+
+### Run
+Ensure you built or pulled the image first.
+
 Run an instance of the image (OpenMRS Platform database):
 
 ```
@@ -38,7 +50,9 @@ docker run -d openmrs-platform-mysql -p 3306:3306 docker-openmrs-platform-mysql 
     -e MYSQL_DATABASE="openmrs"
 ```
 
+### List
 If you want to find your image list all images and look for your tag:
+
 ```
 docker images
 ```
