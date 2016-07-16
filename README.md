@@ -14,6 +14,11 @@ For more information about the OpenMRS Platform visit [openmrs.org](http://www.o
 Make sure you have [Docker](https://docs.docker.com/) installed.
 
 ## Setup
+You need to have the Docker image locally in order to run it.
+
+You can either build it yourself or pull it from the :cloud:
+
+Please follow the appropriate section below.
 
 ### Build
 Start by cloning this repository:
